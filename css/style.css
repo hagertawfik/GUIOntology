@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(211, 188, 188, 0.504)
+}
+.btn-bg{
+    background-color: rgba(85, 59, 73, 0.73);
+    color: white;
+}
+
+label{
+    font-size: larger;
+}
+.text-color{
+    color: rgb(103, 103, 122);
+}
+.btn-lesson a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    margin: 0  !important;
+}

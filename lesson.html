@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container m-auto mt-5">
+        <h2 class="text-center text-color"> Lesson Page</h2>
+       
+        <form>
+            <div class="row ">
+              <div class=" mb-3 col-md-12">
+                <label for="exampleFormControlInput10" class="form-label">Lesson Name</label>
+                <input type="text" id="exampleFormControlInput10" class="form-control form-select-lg mb-3" placeholder="Lesson Name" aria-label="Lesson Name">
+              </div>
+              <div class=" mb-3 col-md-12">
+                <label for="exampleFormControlInput11" class="form-label">Lesson Number</label>
+                <input type="number" id="exampleFormControlInput11" class="form-control form-select-lg mb-3" placeholder="Lesson Number" aria-label="Lesson Number">
+              </div>
+              <div class=" mb-3 col-md-12">
+                <label for="exampleFormControlInput12" class="form-label">List Of Nodes</label>
+                  <select id="exampleFormControlInput12" class="form-select form-select-lg mb-3" multiple >
+                    <option value="energy">energy</option>
+                    <option value="chemical energy">chemical energy</option>
+                    <option value="mechanical energy">mechanical energy</option>
+                    <option value="thermal energy">thermal energy</option>
+                    <option value="potential energy">potential energy</option>
+                    <option value="kinetic energy">kinetic energy</option>
+                    <option value="linear energy">linear energy</option>
+                    <option value="flexible energy">flexible energy</option>
+                    <option value="gravitation energy">gravitation energy</option>
+                    <option value="electric energy">electric energy</option>
+                    <option value="magnetic energy">magnetic energy</option>
+                    <option value="rotational energy">rotational energy</option>
+                  </select>
+              </div>
+            </div>
+    
+      </form>
+      <div class=" row w-100  justify-content-around">
+        <button class="btn btn-bg  mb-4 col-md-2 " id="addlessonbtn" type="submit">Add New Lesson</button>
+        <button class="btn btn-bg  mb-4 col-md-2 " id="addExistlessonbtn1" type="submit">Add Nodes in Exist lesson </button>
+        <button class="btn btn-bg  mb-4  col-md-2" id="deletelessonbtn1" type="submit">Delete Nodes in Exist lesson </button>
+        <button class="btn btn-bg  mb-4  col-md-2"  type="submit"><a class="text-decoration-none text-white" href="deleteLesson.html">Delete Lesson Page</a></button>
+      </div>
+      <div>
+        <h2 class="text-danger text-center fw-bold mt-3" id="msg"></h2>
+      </div>
+      </div>
+    </div>
+    <script src="lesson.js"></script> 
+</body>
+</html>
