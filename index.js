@@ -23,8 +23,8 @@ ourbtnAdd.addEventListener("click", async function () {
     concept: concept.value,
     level :Number(level.value) 
   }
-  // console.log(nodeObject);
-await AddNode(nodeObject);
+
+// await AddNode(nodeObject);
 })
 
 async function AddNode(nodeObject) {
@@ -36,6 +36,6 @@ async function AddNode(nodeObject) {
       "Content-Type": "application/json",
     },
   })
-  const json =await response.json()
-  console.log(json);
+  const json = await response.json()
+  document.getElementById('addDone').innerHTML = json.message
 }

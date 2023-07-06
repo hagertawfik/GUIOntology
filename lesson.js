@@ -4,7 +4,6 @@ let listOfnodes = document.getElementById("exampleFormControlInput12");
 let addlessonbtn = document.getElementById("addlessonbtn");
 let addExistlessonbtn1 = document.getElementById("addExistlessonbtn1");
 let msg = document.getElementById("msg");
-
 let deletelessonbtn1 = document.getElementById("deletelessonbtn1");
 
 function addnode(){
@@ -37,7 +36,7 @@ addlessonbtn.addEventListener("click", async function () {
       lessonNumber :Number(lessonNumber.value) ,
       nodes : addnode()
     }
-    // console.log(lessonObject);
+
   addNodeInExistLesson(lessonObject)
     })
   async function AddLesson(lessonObject) {
@@ -50,7 +49,6 @@ addlessonbtn.addEventListener("click", async function () {
       },
     })
     const json =await response.json()
-        // console.log(json);
         msg.innerHTML = json.message 
   }
 
@@ -66,7 +64,6 @@ addlessonbtn.addEventListener("click", async function () {
         },
       })
       const json = await response.json()
-      console.log(json);
       msg.innerHTML = json.message 
   }
 
@@ -98,7 +95,6 @@ async function deleteNodesInlesson(lessonObject) {
       },
     })
     const json =await response.json()
-        // console.log(json);
         msg.innerHTML = json.message 
   }
   

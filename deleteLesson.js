@@ -7,7 +7,7 @@ deletelessonbtn.addEventListener("click", async function () {
     let lessonObject ={
       lessonName :lessonName.value,
     }
-  //   console.log(lessonObject);
+
    await deletelesson(lessonObject)
     })
 
@@ -20,6 +20,5 @@ deletelessonbtn.addEventListener("click", async function () {
           },
         })
         const json =await response.json()
-            // console.log(json);
             msgdeletelesson.innerHTML = json.message 
       }
